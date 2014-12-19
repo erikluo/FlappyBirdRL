@@ -36,7 +36,7 @@
                 case "BORN":
                     this.state.set("CRUISING");
                     break;
-                case "CRUSING":
+                case "CRUISING":
                     this.y += Math.sin(Date.now() / 150) * 0.70;
                     this.flapping = 150;
                     break;

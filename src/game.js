@@ -11,12 +11,12 @@
 
         atlas: new Ω.SpriteAtlas("csv", "res/flappyAtlas/atlas"),
 
-        init: function (w, h) {
+        init: function (w, h, selector) {
 
-            this._super(w, h);
+            this._super(w, h, selector);
 
             Ω.evt.progress.push(function (remaining, max) {
-                console.log((((max - remaining) / max) * 100 | 0) + "%");
+                //console.log((((max - remaining) / max) * 100 | 0) + "%");
             });
 
             Ω.input.bind({
